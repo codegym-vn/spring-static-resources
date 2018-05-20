@@ -1,0 +1,17 @@
+group 'com.codegym'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'war'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.springframework', name: 'spring-webmvc', version: '4.3.17.RELEASE'
+    compile group: 'javax.servlet.jsp.jstl', name: 'jstl-api', version: '1.2'
+
+}
